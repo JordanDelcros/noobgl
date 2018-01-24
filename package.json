@@ -1,0 +1,22 @@
+{
+  "name": "noobgl",
+  "version": "0.0.1",
+  "description": "WebGL 2 without the boring bits",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/JordanDelcros/noobgl.git"
+  },
+  "keywords": [
+    "webgl2"
+  ],
+  "author": "Jordan Delcros",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JordanDelcros/noobgl/issues"
+  },
+  "homepage": "https://github.com/JordanDelcros/noobgl#readme"
+}
