@@ -9,6 +9,10 @@ export default class Program {
 		this.instance = context.createProgram();
 
 		this.shader = null;
+
+		this.drawLength = null;
+
+		this.drawSize = null;
 	
 		return this;
 
@@ -35,11 +39,13 @@ export default class Program {
 		return this;
 
 	}
-	detachShader( shader ){
+	detachShader(){
 
-		this.context.detachShader(this.instance, shader.vertex);
+		this.context.detachShader(this.instance, this.shader.vertex);
 
-		this.context.detachShader(this.instance, shader.fragment);
+		this.context.detachShader(this.instance, this.shader.fragment);
+
+		this.shader = null;
 
 		return this;
 
@@ -93,7 +99,7 @@ export default class Program {
 		return this;
 
 	}
-	setUniformMatrix( name, matrix, transpose = false, size = null ){
+	setUniformMatrix( name, matrix, transpose = false ){
 
 		this.use();
 
@@ -101,7 +107,7 @@ export default class Program {
 
 		var size = Math.sqrt(matrix.length);
 
-		this.context[`uniformMatrix${size}fv`](location, false, matrix);
+		this.context[`uniformMatrix${size}fv`](location, transpose, matrix);
 
 		return this;
 

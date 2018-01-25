@@ -3,15 +3,15 @@ import WebGL2 from "./webgl2.js";
 var TEXTURE_LOCATION = 0;
 
 export default class Texture {
-	constructor( context, image ){
+	constructor( context, source ){
 
 		this.context = context;
 
-		this.source = image;
+		this.source = source;
 
-		this.location = TEXTURE_LOCATION;
+		this.location = WebGL2.TEXTURE0 + TEXTURE_LOCATION;
 
-		this.context.activeTexture(WebGL2.TEXTURE0 + TEXTURE_LOCATION);
+		this.context.activeTexture(this.location);
 
 		TEXTURE_LOCATION++;
 
@@ -58,9 +58,9 @@ export default class Texture {
 		return this;
 
 	}
-	getParameter( name ){
+	getParameter( parameter ){
 
-		return this.context.getParameter(name);
+		return this.context.getParameter(parameter);
 
 	}
 	delete(){
