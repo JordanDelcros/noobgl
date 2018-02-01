@@ -22,10 +22,10 @@ import { WebGL2, Program, Shader, Texture, CompressedTexture } from "noobgl";
 
 ## Documentation
 
-Everything you need to know is on the [documentation page of the wiki](https://github.com/JordanDelcros/noobgl/wiki/Documentation).
+Everything you need to know is on the [documentation page of the wiki](https://github.com/noobgl/noobgl/wiki/Documentation).
 
 
 [npm link]: https://www.npmjs.com/package/noobgl
-[github license]: https://github.com/JordanDelcros/noobgl/blob/master/LICENSE
+[github license]: https://github.com/noobgl/noobgl/blob/master/LICENSE
 [badge npm version]: https://img.shields.io/npm/v/noobgl.svg
-[badge github license]: https://img.shields.io/github/license/JordanDelcros/noobgl.svg
+[badge github license]: https://img.shields.io/github/license/noobgl/noobgl.svg
