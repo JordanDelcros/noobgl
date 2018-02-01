@@ -6,7 +6,7 @@ WebGL 2 without the boring bits
 
 ## Introduction
 This micro framework makes you more productive with WebGL2 but it stay low-level and lightweight as much as possible.
-Everything is designed to be object oriented, modulable and easy to use.
+Everything is designed to be object-oriented, modular and easy to use.
 
 ## Instalation
 

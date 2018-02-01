@@ -1,6 +1,6 @@
 {
   "name": "noobgl",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "WebGL 2 without the boring bits",
   "main": "index.js",
   "scripts": {
