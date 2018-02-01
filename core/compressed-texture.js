@@ -43,7 +43,7 @@ export default class CompressedTexture extends Texture {
 
 			this.delete();
 
-		};
+		}
 
 		if( !header[HEADER_PIXEL_FORMAT_FLAGS_INDEX] & DDPF_FOUR_CHARACTERS ){
 
@@ -51,7 +51,7 @@ export default class CompressedTexture extends Texture {
 
 			this.delete();
 
-		};
+		}
 
 		var bytesPerBlock = 0;
 
@@ -79,7 +79,7 @@ export default class CompressedTexture extends Texture {
 
 				console.error("The value of the four characters is unsupported.");
 
-		};
+		}
 
 		var mipmaps = 1;
 
@@ -87,7 +87,7 @@ export default class CompressedTexture extends Texture {
 
 			mipmaps = Math.max(1, header[HEADER_MIPMAP_COUNT_INDEX]);
 
-		};
+		}
 
 		var width = header[HEADER_WIDTH_INDEX];
 
@@ -111,7 +111,7 @@ export default class CompressedTexture extends Texture {
 
 			height *= 0.5;
 
-		};
+		}
 
 		return this;
 

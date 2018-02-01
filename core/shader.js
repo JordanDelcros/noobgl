@@ -13,7 +13,7 @@ export default class Shader {
 
 			console.error(`Vertex shader compile: ${this.context.getShaderInfoLog(this.vertex)}`);
 
-		};
+		}
 
 		this.fragment = this.context.createShader(this.context.FRAGMENT_SHADER);
 
@@ -25,7 +25,7 @@ export default class Shader {
 
 			console.error(`Fragment shader compile: ${this.context.getShaderInfoLog(this.fragment)}`);
 
-		};
+		}
 
 		return this;
 

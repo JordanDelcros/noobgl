@@ -1,5 +1,4 @@
 import WebGL2 from "./webgl2.js";
-import Shader from "./shader.js";
 
 export default class Program {
 	constructor( context ){
